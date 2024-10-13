@@ -1,101 +1,80 @@
-import Image from "next/image";
+import BoldImageFromRight from '@/components/atoms/BoldImageFromRight';
+import EnTitle from '@/components/atoms/EnTitle';
+import EnTitleCenter from '@/components/atoms/EnTitleCenter';
+import GoogleMap from '@/components/atoms/GoogleMap';
+import ImageFromLeft from '@/components/atoms/ImageFromLeft';
+import ImageFromRight from '@/components/atoms/ImageFromRight';
+import LinkButton from '@/components/atoms/LinkButton';
+import MainMessage from '@/components/atoms/MainMessage';
+import NormalImage from '@/components/atoms/NormalImage';
+import SubMessage from '@/components/atoms/SubMessage';
+import SubTitle from '@/components/atoms/SubTitle';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	return (
+		<>
+			<section className="w-full max-w-screen-xl mx-auto py-48">
+				<MainMessage>
+					Support
+					<br />
+					Your Challenge
+				</MainMessage>
+				<SubMessage>
+					あなたの
+					<span className="text-6xl text-teal-300 font-extrabold">挑戦</span>
+					を応援します。
+				</SubMessage>
+			</section>
+			<BoldImageFromRight src="/1.jpg" alt="テスト" />
+			<section className="flex w-full max-w-screen-xl justify-between items-center mx-auto py-60">
+				<div className="w-3/5">
+					<EnTitle>ABOUT</EnTitle>
+					<SubTitle>私たちの技術、あなたの未来</SubTitle>
+					<p className="leading-loose">
+						技術の進化は絶えません。
+						<br />
+						私たちは、最新のウェブマーケティング戦略とホームページ制作技術を駆使して、
+						<br />
+						あなたのビジネスを次のレベルへと押し上げます。
+						<br />
+						私たちの知識と経験が、あなたのビジョンを具現化します。
+					</p>
+					<LinkButton src="/about">詳しくはこちら →</LinkButton>
+				</div>
+				<div className="w-2/5">
+					<NormalImage src="/aboutus.png" alt="イメージ" />
+				</div>
+			</section>
+			<ImageFromLeft src="/2.jpg" alt="テスト" />
+			<section className="flex w-full max-w-screen-xl justify-between items-center mx-auto py-60">
+				<div className="w-3/6">
+					<EnTitle>SERVICE</EnTitle>
+					<SubTitle>変革を導くウェブマーケティング</SubTitle>
+					<p className="leading-loose">
+						今日のデジタル時代において、革新的なウェブマーケティングは、企業が成長し続けるための鍵です。
+						<br />
+						私たちは、目標を達成するためのカスタマイズされた戦略を提供します。
+						<br />
+						SEO、SNSマーケティング、コンテンツマーケティング、PPC広告など、最新の技術と手法を駆使して目標達成へと導きます。
+					</p>
+					<LinkButton src="/service">詳しくはこちら →</LinkButton>
+				</div>
+				<div className="w-2/6">
+					<NormalImage src="/service.png" alt="イメージ" />
+				</div>
+			</section>
+			<ImageFromRight src="/3.jpg" alt="テスト" />
+			<section className="py-60">
+				<EnTitleCenter>WORKS</EnTitleCenter>
+			</section>
+			<section className="py-60">
+				<EnTitleCenter>BLOGS/COLUMNS</EnTitleCenter>
+			</section>
+			<ImageFromLeft src="/4.jpg" alt="テスト" />
+			<section className="py-60">
+				<EnTitleCenter>ACCESS</EnTitleCenter>
+				<GoogleMap />
+			</section>
+		</>
+	);
 }
