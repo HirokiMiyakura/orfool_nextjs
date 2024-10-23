@@ -1,14 +1,18 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
+import clsx from "clsx"; // 複数のクラス名を安全に組み合わせるためのライブラリ
 
 interface EnTitleProps {
-	children: ReactNode;
+  children: ReactNode;
+  className?: string;
 }
 
-export default function EnTitle({ children }: EnTitleProps) {
-	return (
-		<div className="relative">
-			<span className="absolute text-teal-300 left-0 top-0">＊</span>
-			<h2 className="text-9xl font-thin mb-20">{children}</h2>
-		</div>
-	);
+export default function EnTitle({ children, className }: EnTitleProps) {
+  return (
+    <div className="relative">
+      <span className="absolute -left-2 -top-2 text-teal-300">＊</span>
+      <h2 className={clsx("mb-10 font-thin sm:mb-20", className)}>
+        {children}
+      </h2>
+    </div>
+  );
 }

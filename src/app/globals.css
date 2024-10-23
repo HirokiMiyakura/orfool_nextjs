@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+/* app/globals.css */
+@import "aos/dist/aos.css";
 
 :root {
   --background: #ffffff;
@@ -20,8 +24,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.shippori-mincho {
+  font-family: "Shippori Mincho", serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+  /* font-size: 40px !important; */
 }

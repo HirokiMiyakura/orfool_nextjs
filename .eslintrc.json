@@ -1,3 +1,12 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+	"extends": [
+		"next/core-web-vitals",
+		"next/typescript",
+		"plugin:tailwindcss/recommended"
+	],
+	"plugins": ["tailwindcss"],
+	"rules": {
+		"tailwindcss/classnames-order": "warn", // クラス名の順序をチェック
+		"tailwindcss/no-custom-classname": "off" // カスタムクラスのエラーを無視
+	}
 }
