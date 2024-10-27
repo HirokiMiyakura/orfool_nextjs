@@ -26,7 +26,12 @@ export default function ContentWithImage({
 }: ContentWithImageProps) {
   return (
     <>
-      <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" className="w-full sm:w-3/6">
+      <div
+        data-aos="fade-down"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        className="w-full sm:w-3/6"
+      >
         <EnTitle className="text-5xl sm:text-9xl">{title}</EnTitle>
         <SubTitle>{subTitle}</SubTitle>
         <div className="mb-7 block sm:hidden">
@@ -35,7 +40,12 @@ export default function ContentWithImage({
         <p className="font-thin leading-loose">{description}</p>
         <LinkButton src={link}>{linkText}</LinkButton>
       </div>
-      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="hidden sm:block sm:w-2/6">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        className="hidden sm:block sm:w-2/6"
+      >
         <NormalImage src={imageSrcPc} alt={imageAlt} />
       </div>
     </>

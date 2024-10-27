@@ -10,7 +10,10 @@ export default function BoldImageFromRight({
   alt,
 }: BoldImageFromRightProps) {
   return (
-    <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
+    <div
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1000"
       style={{
         position: "relative",
         width: "90vw",
