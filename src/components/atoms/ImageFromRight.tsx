@@ -7,7 +7,7 @@ interface ImageFromRightProps {
 
 export default function ImageFromRight({ src, alt }: ImageFromRightProps) {
   return (
-    <div className="relative h-28 w-full sm:h-80">
+    <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="relative h-28 w-full sm:h-80">
       <div className="absolute right-0 h-full w-11/12">
         <Image
           src={src}

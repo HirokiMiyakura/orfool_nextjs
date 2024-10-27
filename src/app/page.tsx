@@ -25,7 +25,7 @@ export default async function Home() {
         <SubMessage>
           あなたの
           <span
-            className={`shippori-mincho text-4xl font-extrabold text-teal-300 sm:text-7xl`}
+            className={`shippori-mincho text-2xl font-extrabold text-teal-300 sm:text-5xl`}
           >
             挑戦
           </span>

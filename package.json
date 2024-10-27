@@ -13,7 +13,7 @@
     "@next/font": "^14.2.15",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
-    "aos": "^2.3.4",
+    "aos": "^3.0.0-beta.6",
     "clsx": "^2.1.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-tailwindcss": "^3.17.5",

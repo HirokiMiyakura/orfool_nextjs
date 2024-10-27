@@ -10,7 +10,7 @@ export default function EnTitle({ children, className }: EnTitleProps) {
   return (
     <div className="relative">
       <span className="absolute -left-2 -top-2 text-teal-300">＊</span>
-      <h2 className={clsx("mb-10 font-thin sm:mb-20", className)}>
+      <h2 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" className={clsx("mb-10 font-thin sm:mb-20", className)}>
         {children}
       </h2>
     </div>

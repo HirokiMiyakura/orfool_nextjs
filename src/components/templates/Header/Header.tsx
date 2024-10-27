@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="mx-auto flex w-full max-w-screen-xl items-center justify-between p-4 py-10 sm:p-8">
+      <header data-aos="fade-down" data-aos-duration="1000" className="mx-auto flex w-full max-w-screen-xl items-center justify-between p-4 py-10 sm:p-8">
         <h1 className="text-4xl sm:text-5xl">
           <a className="font-extrabold" href="/">
             ORFOOL

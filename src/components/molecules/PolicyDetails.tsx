@@ -5,7 +5,7 @@ export default function PolicyDetails() {
     <div className="w-full sm:w-3/5">
       {policies.map((policy, index) => (
         <div key={index} className="mt-16 first:mt-0">
-          <h3 className="shippori-mincho mb-5 text-2xl font-extrabold sm:mb-8 sm:text-3xl">
+          <h3 data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" className="shippori-mincho mb-5 text-2xl font-extrabold sm:mb-8 sm:text-3xl">
             {policy.title}
           </h3>
           <p className="font-thin">{policy.description}</p>

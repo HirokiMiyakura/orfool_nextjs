@@ -12,9 +12,9 @@ export default function Works() {
         <SubMessage>制作実績</SubMessage>
       </SectionWrapper>
       <BoldImageFromRight src="/aboutus_main.png" alt="" />
-      <section className="mx-auto w-full max-w-screen-xl px-4 py-32 sm:px-0 sm:py-48">
+      <SectionWrapper>
         <SlickSlider />
-      </section>
+      </SectionWrapper>
     </>
   );
 }

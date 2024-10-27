@@ -7,7 +7,7 @@ interface ImageFromLeftProps {
 
 export default function ImageFromLeft({ src, alt }: ImageFromLeftProps) {
   return (
-    <div className="relative mr-7 h-28 w-11/12 sm:h-80">
+    <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="relative mr-7 h-28 w-11/12 sm:h-80">
       <Image
         src={src}
         alt={alt}

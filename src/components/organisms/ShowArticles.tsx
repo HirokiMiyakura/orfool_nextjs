@@ -20,8 +20,8 @@ export default async function ShowArticles() {
               />
             </div>
             <div className="p-5 sm:pt-7">
-              <p className="mb-2">{formatDate(blog.publishedAt)}</p>
-              <p className="text-2xl font-extrabold">{blog.title}</p>
+              <p className="sm:text-1xl mb-2 text-sm text-gray-700">{formatDate(blog.publishedAt)}</p>
+              <p className="text-1xl font-extrabold sm:text-2xl">{blog.title}</p>
             </div>
           </div>
         </Link>

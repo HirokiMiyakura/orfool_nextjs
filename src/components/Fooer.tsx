@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer className="mx-auto block w-full max-w-screen-xl justify-between px-4 py-10 sm:flex sm:px-8 sm:py-32">
       <div className="mb-14 sm:mb-0">
-        <p className="text-4xl font-extrabold">ORFOOL INC.</p>
+        <a className="text-4xl font-extrabold" href="/">ORFOOL INC.</a>
       </div>
       <div className="mb-14 sm:mb-0">
         <ul>

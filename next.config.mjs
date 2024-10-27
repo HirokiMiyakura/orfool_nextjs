@@ -7,6 +7,8 @@ const nextConfig = {
 	images: {
 		domains: ['images.microcms-assets.io'],
 	},
+	// output: 'export', // 静的ファイルとしてエクスポートする
+  trailingSlash: true, // パスの末尾にスラッシュを追加（静的サイト向け）
 };
 
 export default nextConfig;
